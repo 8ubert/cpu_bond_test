@@ -15,7 +15,7 @@ def monitor(uso_de_cpu, timeout):
         uso_de_cpu.append(percentual_cpu)
         time.sleep(1)
 
-n_processos = [1.3513, 22.231, 115.241, 224.1232, 772.552]
+n_processos = [1, 2, 3, 4, 5]
 
 if __name__ == '__main__':
     processos = []
@@ -39,10 +39,4 @@ if __name__ == '__main__':
     
     uso_de_cpu = list(uso_de_cpu)
 
-    plt.plot(uso_de_cpu, 'r', label='Host')
-    #plt.plot(uso_de_cpu, 'c', label='VM') 
-    plt.xlabel('Tempo (s)')
-    plt.ylabel('Uso da CPU (%)')
-    plt.legend()
-    plt.grid()
-    plt.show()
+    print(uso_de_cpu)

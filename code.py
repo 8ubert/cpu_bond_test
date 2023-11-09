@@ -1,7 +1,6 @@
 import time
 import psutil
 import multiprocessing
-import matplotlib.pyplot as plt
 
 def calc(x, timeout):
     while True:
